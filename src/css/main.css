@@ -58,6 +58,12 @@ main {
   width: 250px !important;
   height: 310px;
 }
+
+.owl-theme .owl-nav.disabled+.owl-dots{
+  position: absolute;
+  bottom: 1px;
+}
+
 @media screen and (max-width: 1200px) {
   .img {
     width: 235px;
@@ -111,5 +117,8 @@ main {
   .img {
     width: 375px;
     height: 375px;
+  }
+  .owl-theme .owl-nav.disabled+.owl-dots{
+    left: -50px;
   }
 }
