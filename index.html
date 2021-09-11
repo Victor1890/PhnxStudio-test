@@ -4,44 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon" />
     <title>Phnx Studio - Prueba técnica</title>
   </head>
   <body>
     <main>
       <div class="container">
         <div class="container__content">
-          <img src="src/img/logo.png" alt="Logo" class="content-img" />
+          <img src="src/img/logo.png" alt="Logo" class="content-logo" />
           <h1 class="content-title">
             The collections for the home are on display at Milan Design Week
           </h1>
-          <p>
+          <p class="content-desc">
             From 5 to 10 September, Hermès invites you to discover and hear its
             new collections for the home.
           </p>
-          <p>Discover the collection</p>
+          <a
+            href="https://www.hermes.com/us/en/story/285710-milan-design-week-2021/"
+            target="_blank"
+            class="content-link"
+            >Discover the collection</a
+          >
         </div>
-        <div class="container__slider">
-          <img
-            width="250"
-            height="250"
-            src="src/img/oz-mule--212103Z 2F-worn-1-0-0-850-850_b 1.png"
-            alt=""
-          />
-          <img
-            width="250"
-            height="250"
-            src="src/img/oz-mule--212103Z 2F-worn-1-0-0-850-850_b 1.png"
-            alt=""
-          />
-          <img
-            width="250"
-            height="250"
-            src="src/img/oz-mule--212103Z 2F-worn-1-0-0-850-850_b 1.png"
-            alt=""
-          />
+        <div class="content_slider">
+          <div class="slider__list owl-carousel owl-theme">
+            <div class="item">
+              <img class="img" src="src/img/img1.png" alt="" />
+            </div>
+            <div class="item">
+              <img class="img" src="src/img/img2.png" alt="" />
+            </div>
+            <div class="item">
+              <img class="img" src="src/img/img3.png" alt="" />
+            </div>
+            <div class="item">
+              <img class="img" src="src/img/img4.png" alt="" />
+            </div>
+            <div class="item">
+              <img class="img" src="src/img/img5.png" alt="" />
+            </div>
+            <div class="item">
+              <img class="img" src="src/img/img6.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/owlCarousel.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>

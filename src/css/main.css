@@ -2,23 +2,24 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
+  font-family: "Roboto", "Courier New", "Microsoft YaHei", 微软雅黑,
+    "PingFang SC", 萍方, "Noto Sans", SimHei, 黑体, monospace;
+  font-size: 14px;
 }
 body {
 }
 main {
-  background-color: #e5e5e5;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #e5e5e5;
 }
 .container {
-  /* background: #000; */
-  width: 90rem;
-  height: 25rem;
+  background-color: #f6f1eb;
+  width: 84rem;
+  height: 22rem;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -31,9 +32,86 @@ main {
   justify-content: center;
   text-align: center;
 }
-.container__slider {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container__content .content-logo {
+  padding-bottom: 10px;
+}
+.container__content .content-title {
+  padding: 15px 0;
+  font-family: "Courier New";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.09px;
+  width: 25rem;
+}
+.container__content .content-desc {
+  padding-bottom: 15px;
+  font-size: 12px;
+  line-height: 14.06px;
+  width: 30rem;
+}
+.container__content .content-link {
+  font-size: 16px;
+  color: #000;
+}
+.content_slider {
+  width: 64%;
+}
+.img {
+  width: 250px !important;
+  height: 310px;
+}
+@media screen and (max-width: 1200px) {
+  .img {
+    width: 235px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 60rem;
+  }
+  .container__content .content-title {
+    font-size: 16px;
+  }
+  .container__content .content-desc {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+  .container__content {
+    width: auto;
+  }
+  .content_slider {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    background-color: #f6f1eb;
+  }
+  .container {
+    width: 100%;
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .container__content {
+    width: auto;
+  }
+  .container__content .content-desc {
+    width: 80%;
+  }
+  .content_slider {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .img {
+    width: 375px;
+    height: 375px;
+  }
 }
