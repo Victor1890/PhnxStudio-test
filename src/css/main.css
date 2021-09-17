@@ -117,6 +117,10 @@ main {
     width: 95%;
   }
 
+  .controls {
+    display: none;
+  }
+
   .img {
     width: 235px;
   }
@@ -145,6 +149,7 @@ main {
     width: 30%;
   }
   .dots {
+    display: inline-block;
     justify-content: center;
     top: 65%;
     right: 32%;
