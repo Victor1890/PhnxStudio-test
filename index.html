@@ -11,20 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon" />
     <title>Phnx Studio - Prueba técnica</title>
   </head>
   <body>
-    <main class="owl-theme">
+    <main>
       <div class="container">
         <div class="container__content">
           <img src="src/img/logo.png" alt="Logo" class="content-logo" />
@@ -43,31 +36,39 @@
           >
         </div>
         <div class="content_slider">
-          <div class="slider__list owl-carousel">
-            <div class="item">
+          <div class="slider__list">
+            <div class="slider-item">
               <img loading="lazy" class="img" src="src/img/img1.png" alt="" />
             </div>
-            <div class="item">
+            <div class="slider-item">
               <img loading="lazy" class="img" src="src/img/img2.png" alt="" />
             </div>
-            <div class="item">
+            <div class="slider-item">
               <img loading="lazy" class="img" src="src/img/img3.png" alt="" />
             </div>
-            <div class="item">
+            <div class="slider-item">
               <img loading="lazy" class="img" src="src/img/img4.png" alt="" />
             </div>
-            <div class="item">
+            <div class="slider-item">
               <img loading="lazy" class="img" src="src/img/img5.png" alt="" />
             </div>
-            <div class="item">
+            <div class="slider-item">
               <img loading="lazy" class="img" src="src/img/img6.png" alt="" />
             </div>
           </div>
+          <div class="controls">
+            <a href="#" class="prev-btn"
+              ><i class="fa fa-angle-left" aria-hidden="true"></i
+            ></a>
+            <a href="#" class="next-btn"
+              ><i class="fa fa-angle-right" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="dots"></div>
         </div>
       </div>
     </main>
     <script src="src/js/jquery.js"></script>
-    <script src="src/js/owlCarousel.js"></script>
     <script src="src/js/main.js"></script>
   </body>
 </html>
